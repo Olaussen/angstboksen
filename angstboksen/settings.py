@@ -8,10 +8,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't5%6bzreq&0s%3$d8fcx21trv14@^2zj)-l+#ya8lz&)gaa&gi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost',]
-INTERNAL_IPS = ('0.0.0.0','127.0.0.1','localhost',)
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'app',
@@ -88,7 +87,7 @@ LOGIN_REDIRECT_URL = '/admin/'
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Oslo'
 
 USE_I18N = False
 

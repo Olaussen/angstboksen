@@ -3,7 +3,7 @@
 <div class="slider">
     <ul class="slides">
         <li>
-            <img src="{% static 'images/header2.jpg' %}" alt="Django Photo Gallery" class="opaque">
+            <img src="{% static 'images/header.jpg' %}" alt="Django Photo Gallery" class="opaque">
             <div class="caption center-align">
                 <h1>
                     <b>Angstboksen</b><br/>
@@ -14,7 +14,7 @@
             </div>
         </li>
         <li>
-            <img src="{% static 'images/header1.jpg' %}" alt="Django Photo Gallery" class="opaque">
+            <img src="{% static 'images/header.jpg' %}" alt="Django Photo Gallery" class="opaque">
             <div class="caption left-align">
                 <h1>
                     <b>Nyt bilder av familiemedlemmer fanget i angstboksen</b><br />
@@ -24,21 +24,21 @@
         </li>
     </ul>
 </div>
-<div class="container">
-    <div class="row">
+<div class="container" style=" margin-right: 19%; ">
+    <div class="row " style="min-width: 1000px; ">
         {% for album in albums %}
 
-        <div class="col">
-            <div class="card dpg-album-card">
-                <div class="card-image">
-                    <a href="{% url 'album' album.slug %}"><img src="{{ album.thumb.url }}" alt="{{ album.title }}" class="dpg-album-card-image" /></a>
+        <div class="col ">
+            <div class="card dpg-album-card ">
+                <div class="card-image ">
+                    <a href="{% url 'album' album.slug %} "><img src="{{ album.thumb.url }} " alt="{{ album.title }} " class="dpg-album-card-image " /></a>
                 </div>
-                <div class="card-content">
-                    <span class="card-title">{{ album.title }}</span>
+                <div class="card-content ">
+                    <span class="card-title ">{{ album.title }}</span>
                     <p>{{ album.description|truncatechars:120 }}</p>
                 </div>
-                <div class="card-action">
-                    <a href="{% url 'album' album.slug %}">
+                <div class="card-action ">
+                    <a href="{% url 'album' album.slug %} ">
                         Vis flere
                     </a>
                 </div>
@@ -46,18 +46,18 @@
         </div>
 
         {% endfor %}
-
     </div>
+
 </div>
 
-<div class="pagination center">
-    <span class="step-links">
+<div class="pagination center ">
+    <span class="step-links ">
         {% if albums.has_previous %}
-        <a href="?page={{ albums.previous_page_number }}" class="waves-effect waves-light btn btn-large">Previous</a>
+        <a href="?page={{ albums.previous_page_number }} " class="waves-effect waves-light btn btn-large ">Previous</a>
         {% endif %}
 
         {% if albums.has_next %}
-        <a href="?page={{ albums.next_page_number }}" class="waves-effect waves-light btn btn-large">Next</a>
+        <a href="?page={{ albums.next_page_number }} " class="waves-effect waves-light btn btn-large ">Next</a>
         {% endif %}
     </span>
 </div>

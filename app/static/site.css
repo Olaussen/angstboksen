@@ -75,6 +75,7 @@ strong {
 .dpg-album-card-image {
     max-width: 300px;
     max-height: 400px;
+    display: grid;
 }
 
 .dpg-album-card,
@@ -82,5 +83,6 @@ strong {
     max-height: 400px;
     max-width: 300px;
     box-shadow: 5px 5px 5px grey;
-    margin: 5px;
+    margin-right: 5px;
+    margin-bottom: 200px;
 }

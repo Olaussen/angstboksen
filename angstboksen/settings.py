@@ -102,7 +102,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/1.8/howto/static-files/deployment/
 # python manage.py collectstatic
 #STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static/']))
-STATIC_ROOT = BASE_DIR + '/app/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 MEDIA_URL = '/media/'
 #MEDIA_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['media/']))

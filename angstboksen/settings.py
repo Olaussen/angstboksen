@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't5%6bzreq&0s%3$d8fcx21trv14@^2zj)-l+#ya8lz&)gaa&gi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -102,7 +102,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/1.8/howto/static-files/deployment/
 # python manage.py collectstatic
 #STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static/']))
-STATIC_ROOT = BASE_DIR + '/static/'
+STATIC_ROOT = BASE_DIR + '/app/static/'
 
 MEDIA_URL = '/media/'
 #MEDIA_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['media/']))

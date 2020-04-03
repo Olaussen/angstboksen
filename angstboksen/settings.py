@@ -25,7 +25,7 @@ SECRET_KEY = 'i^f-=!%6dd_$rhzgap!tt5vrzunt49f18$9mo*-ocda@$&64qf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '134.122.101.218', 'angstboksen.no']
+ALLOWED_HOSTS = ['*']
 INTERNAL_IPS = ('0.0.0.0','127.0.0.1','localhost',)
 
 # Application definition

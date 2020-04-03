@@ -9,22 +9,25 @@
 </head>
 
 <body>
-    <nav role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="/" class="brand-logo"><b>Angstboksen</b> - ditt nye favorittgalleri :)</a>
-        </div>
-    </nav>
+    <div class="selfwrapper">
+        <nav role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="/" class="brand-logo"><b>Angstboksen</b> - ditt nye favorittgalleri :)</a>
+            </div>
+        </nav>
 
-    {% block content %}{% endblock %}
-
-    <footer class="page-footer">
-        <a href="https://github.com/Olaussen/angstboksen" target="_blank">
-            <img src="{% static 'social/social-github.svg' %}" class="dpg-icon" alt="Olaussen Github" />
-        </a>
-        <div class="footer-copyright">
-            © 2020 Copyright - Hauk Aleksander Olaussen
-        </div>
-    </footer>
+        {% block content %}{% endblock %}
+    </div>
+    <div class="push">
+        <footer class="page-footer">
+            <a href="https://github.com/Olaussen/angstboksen" target="_blank">
+                <img src="{% static 'social/social-github.svg' %}" class="dpg-icon" alt="Olaussen Github" />
+            </a>
+            <div class="footer-copyright">
+                © 2020 Copyright - Hauk Aleksander Olaussen
+            </div>
+        </footer>
+    </div>
 
     <script src="{% static 'material/js/jquery-2.2.0.js' %}"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script> -->

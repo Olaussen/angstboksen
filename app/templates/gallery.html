@@ -24,14 +24,14 @@
         </li>
     </ul>
 </div>
-<div class="container" style=" margin-right: 19%; ">
-    <div class="row " style="min-width: 1000px; ">
+<div class="container" style=" margin-right: 9%; ">
+    <div class="row " style="max-width: 1500px; margin-left: 0;">
         {% for album in albums %}
 
-        <div class="col ">
-            <div class="card dpg-album-card ">
+        <div class="col" style="margin-bottom:200px;">
+            <div class=" card dpg-album-card ">
                 <div class="card-image ">
-                    <a href="{% url 'album' album.slug %} "><img style="height: 400px;" src="{{ album.thumb.url }} " alt="{{ album.title }} " class="dpg-album-card-image " /></a>
+                    <a href="{% url 'album' album.slug %} "><img style="height: 400px; " src="{{ album.thumb.url }} " alt="{{ album.title }} " class="dpg-album-card-image " /></a>
                 </div>
                 <div class="card-content ">
                     <span class="card-title ">{{ album.title }}</span>
@@ -46,6 +46,7 @@
         </div>
 
         {% endfor %}
+
     </div>
 
 </div>
